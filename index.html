@@ -565,7 +565,7 @@
 <!--===== TEAM AREA ENDS =======-->
 
 <!--===== OTHERS AREA STARTS =======-->
-<div class="counter-section-area">
+<div class="counter-section-area" id="clients"
   <div class="container">
     <div class="row">
       <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500" data-aos-offset="20">
@@ -796,10 +796,11 @@ Installation was so simple, and I didn’t need an expert to set it up. The alar
                             </a>
                         </div>
                         <div class="subscribe-form-container">
-                           <form>
-                  <input type="text" placeholder="Email Address..">
-                  <button>Subscribe Now <i class="fa-solid fa-arrow-right"></i></button>
-                </form> 
+                         <form action="https://formspree.io/f/yourFormID" method="POST">
+    <input type="email" name="email" placeholder="Email Address..." required>
+    <button type="submit">Subscribe Now <i class="fa-solid fa-arrow-right"></i></button>
+    <p class="confirmation-message" style="display: none;">Thank you for subscribing!</p>
+</form>
 
               </div>
             </div>
