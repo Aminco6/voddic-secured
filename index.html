@@ -811,19 +811,7 @@ Installation was so simple, and I didn’t need an expert to set it up. The alar
                         </div>
 
                         <div class="subscribe-form-container">
-                            <!-- Email input form -->
-                            <form id="subscribe-form">
-                                <input type="email" id="email" placeholder="Email Address..." required>
-                                <button type="submit">Subscribe Now <i class="fa-solid fa-arrow-right"></i></button>
-                            </form>
-                        </div>
-
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </div>
-</div>
+                           
 
 
 
@@ -951,31 +939,7 @@ Installation was so simple, and I didn’t need an expert to set it up. The alar
 <script src="assets/js/main.js"></script>
    
 
-             <script>
-    // Handle the form submission and redirect to WhatsApp
-    document.getElementById('subscribe-form').addEventListener('submit', function(e) {
-        e.preventDefault(); // Prevent the form from submitting normally
-
-        // Get the email input value
-        var email = document.getElementById('email').value;
-
-        if (email) {
-            // WhatsApp phone number (replace with your WhatsApp number)
-            var phoneNumber = '+2349076495671'; // Replace with your WhatsApp phone number (without the "+" sign)
-
-            // Construct the WhatsApp message with the email
-            var message = encodeURIComponent('Hello, I would like to subscribe with this email: ' + email);
-
-            // Redirect to WhatsApp with the pre-filled message
-            var whatsappURL = 'https://wa.me/' + phoneNumber + '?text=' + message;
-
-            // Redirect the user to WhatsApp
-            window.location.href = whatsappURL;
-        } else {
-            alert("Please enter a valid email address.");
-        }
-    });
-</script>
+             
 
 </body>
 </html>
