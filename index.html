@@ -785,10 +785,14 @@ Installation was so simple, and I didn’t need an expert to set it up. The alar
               <div class="heading2">
                 <h2 class="text-anime-style-3">Empower Your Security Request Information</h2>
                 <div class="space16"></div>
-                <form>
-                  <input type="text" placeholder="Email Address..">
-                  <button>Subscribe Now <i class="fa-solid fa-arrow-right"></i></button>
-                </form>
+                <form action="https://formspree.io/f/yourFormID" method="POST">
+    <input type="email" name="email" placeholder="Email Address..." required>
+    <button type="submit">Subscribe Now <i class="fa-solid fa-arrow-right"></i></button>
+    <p class="confirmation-message" style="display: none;">Thank you for subscribing!</p>
+</form>
+
+
+
               </div>
             </div>
             <div class="col-lg-1"></div>
@@ -835,9 +839,7 @@ Installation was so simple, and I didn’t need an expert to set it up. The alar
         <div class="footer-list">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#">Cyber Security Specialist </a></li>
             <li><a href="#"> Burglar Alarm Security  </a></li>
-            <li><a href="#">Banking Sector Outside</a></li>
             <li><a href="#">Private Sector Security </a></li>
             <li><a href="#">School & Hospital Security </a></li>
             <li><a href="#">Shops & Offices Security </a></li>
@@ -913,5 +915,16 @@ Installation was so simple, and I didn’t need an expert to set it up. The alar
 <script src="assets/js/plugins/Splitetext.js"></script>
 <script src="assets/js/plugins/ScrollTrigger.min.js"></script>
 <script src="assets/js/main.js"></script>
+     <script>
+  const form = document.querySelector('form');
+  const confirmationMessage = document.querySelector('.confirmation-message');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    confirmationMessage.style.display = 'block'; // Show confirmation message
+    // You can also reset the form if needed:
+    form.reset();
+  });
+</script>
 </body>
 </html>
